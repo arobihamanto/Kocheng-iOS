@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962A9755DFB12E52AEF566E8 /* libPods-kocheng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B533B037B35C4F507FF560 /* libPods-kocheng.a */; };
+		F4788B2326004D250047FF30 /* TheCatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B2226004D250047FF30 /* TheCatAPI.swift */; };
+		F4788B2626004E4C0047FF30 /* TheCatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B2526004E4C0047FF30 /* TheCatAPIService.swift */; };
+		F4788B2B260053480047FF30 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B2A260053480047FF30 /* LoadingView.swift */; };
+		F4788B2F2600546B0047FF30 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B2E2600546B0047FF30 /* Constant.swift */; };
+		F4788B332600573E0047FF30 /* FetchCatImagesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B322600573E0047FF30 /* FetchCatImagesUseCase.swift */; };
+		F4788B38260057AA0047FF30 /* CatRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B37260057AA0047FF30 /* CatRepositoryType.swift */; };
+		F4788B3D26005BF90047FF30 /* CatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B3C26005BF90047FF30 /* CatRepository.swift */; };
 		F4AE74DE25FF38800063ADD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE74DD25FF38800063ADD0 /* AppDelegate.swift */; };
 		F4AE74E025FF38800063ADD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE74DF25FF38800063ADD0 /* SceneDelegate.swift */; };
-		F4AE74E225FF38800063ADD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE74E125FF38800063ADD0 /* ViewController.swift */; };
+		F4AE74E225FF38800063ADD0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE74E125FF38800063ADD0 /* TodayViewController.swift */; };
 		F4AE74E525FF38800063ADD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4AE74E325FF38800063ADD0 /* Main.storyboard */; };
 		F4AE74E725FF38820063ADD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4AE74E625FF38820063ADD0 /* Assets.xcassets */; };
 		F4AE74EA25FF38820063ADD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4AE74E825FF38820063ADD0 /* LaunchScreen.storyboard */; };
+		F4AE750725FF3D680063ADD0 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE750625FF3D680063ADD0 /* TodayViewModel.swift */; };
+		F4AE750B25FF3DA00063ADD0 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE750A25FF3DA00063ADD0 /* Cat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48E5FC032994A9C88AEBFDD5 /* Pods-kocheng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kocheng.release.xcconfig"; path = "Target Support Files/Pods-kocheng/Pods-kocheng.release.xcconfig"; sourceTree = "<group>"; };
+		51B533B037B35C4F507FF560 /* libPods-kocheng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kocheng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D24FE2B886E228D91839B29 /* Pods-kocheng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kocheng.debug.xcconfig"; path = "Target Support Files/Pods-kocheng/Pods-kocheng.debug.xcconfig"; sourceTree = "<group>"; };
+		F4788B2226004D250047FF30 /* TheCatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPI.swift; sourceTree = "<group>"; };
+		F4788B2526004E4C0047FF30 /* TheCatAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPIService.swift; sourceTree = "<group>"; };
+		F4788B2A260053480047FF30 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F4788B2E2600546B0047FF30 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F4788B322600573E0047FF30 /* FetchCatImagesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCatImagesUseCase.swift; sourceTree = "<group>"; };
+		F4788B37260057AA0047FF30 /* CatRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRepositoryType.swift; sourceTree = "<group>"; };
+		F4788B3C26005BF90047FF30 /* CatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRepository.swift; sourceTree = "<group>"; };
 		F4AE74DA25FF38800063ADD0 /* kocheng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kocheng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AE74DD25FF38800063ADD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4AE74DF25FF38800063ADD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4AE74E125FF38800063ADD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4AE74E125FF38800063ADD0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		F4AE74E425FF38800063ADD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4AE74E625FF38820063ADD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4AE74E925FF38820063ADD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4AE74EB25FF38820063ADD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4AE750625FF3D680063ADD0 /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		F4AE750A25FF3DA00063ADD0 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,16 +53,108 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962A9755DFB12E52AEF566E8 /* libPods-kocheng.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49DDEEA66BA1E58E95888940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B533B037B35C4F507FF560 /* libPods-kocheng.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4D48D770D9CBB3110BF0FDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D24FE2B886E228D91839B29 /* Pods-kocheng.debug.xcconfig */,
+				48E5FC032994A9C88AEBFDD5 /* Pods-kocheng.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4788B2026004CC90047FF30 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B2126004CE90047FF30 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		F4788B2126004CE90047FF30 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B2226004D250047FF30 /* TheCatAPI.swift */,
+				F4788B2526004E4C0047FF30 /* TheCatAPIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F4788B28260053310047FF30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B29260053390047FF30 /* LoadingView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4788B29260053390047FF30 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B2A260053480047FF30 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		F4788B2D260054590047FF30 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B2E2600546B0047FF30 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F4788B31260057250047FF30 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B322600573E0047FF30 /* FetchCatImagesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F4788B362600578E0047FF30 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B37260057AA0047FF30 /* CatRepositoryType.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		F4788B3A26005BDE0047FF30 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B3C26005BF90047FF30 /* CatRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F4788B3B26005BE50047FF30 /* PersistantStorages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistantStorages;
+			sourceTree = "<group>";
+		};
 		F4AE74D125FF38800063ADD0 = {
 			isa = PBXGroup;
 			children = (
 				F4AE74DC25FF38800063ADD0 /* kocheng */,
+				C4D48D770D9CBB3110BF0FDB /* Pods */,
+				49DDEEA66BA1E58E95888940 /* Frameworks */,
 				F4AE74DB25FF38800063ADD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +173,7 @@
 				F4AE74F225FF38CA0063ADD0 /* Application */,
 				F4AE74F525FF39CA0063ADD0 /* Data */,
 				F4AE74F625FF39CE0063ADD0 /* Domain */,
+				F4788B2026004CC90047FF30 /* Infrastructure */,
 				F4AE74F425FF39B50063ADD0 /* Presentation */,
 				F4AE74F325FF39800063ADD0 /* Resources */,
 			);
@@ -86,9 +201,10 @@
 		F4AE74F425FF39B50063ADD0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F4788B28260053310047FF30 /* Views */,
+				F4AE750125FF3C3A0063ADD0 /* Scenes */,
 				F4AE74E825FF38820063ADD0 /* LaunchScreen.storyboard */,
 				F4AE74E325FF38800063ADD0 /* Main.storyboard */,
-				F4AE74E125FF38800063ADD0 /* ViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -96,6 +212,8 @@
 		F4AE74F525FF39CA0063ADD0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F4788B3B26005BE50047FF30 /* PersistantStorages */,
+				F4788B3A26005BDE0047FF30 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -103,8 +221,45 @@
 		F4AE74F625FF39CE0063ADD0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				F4AE750925FF3D980063ADD0 /* Entities */,
+				F4788B362600578E0047FF30 /* Interface */,
+				F4788B31260057250047FF30 /* UseCases */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		F4AE750125FF3C3A0063ADD0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F4788B2D260054590047FF30 /* Utils */,
+				F4AE750425FF3C9E0063ADD0 /* Search */,
+				F4AE750325FF3C960063ADD0 /* Today */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F4AE750325FF3C960063ADD0 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE74E125FF38800063ADD0 /* TodayViewController.swift */,
+				F4AE750625FF3D680063ADD0 /* TodayViewModel.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		F4AE750425FF3C9E0063ADD0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F4AE750925FF3D980063ADD0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE750A25FF3DA00063ADD0 /* Cat.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4AE74EE25FF38820063ADD0 /* Build configuration list for PBXNativeTarget "kocheng" */;
 			buildPhases = (
+				FA325E24AC5297806A901CC1 /* [CP] Check Pods Manifest.lock */,
 				F4AE74D625FF38800063ADD0 /* Sources */,
 				F4AE74D725FF38800063ADD0 /* Frameworks */,
 				F4AE74D825FF38800063ADD0 /* Resources */,
@@ -172,14 +328,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FA325E24AC5297806A901CC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kocheng-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4AE74D625FF38800063ADD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4AE74E225FF38800063ADD0 /* ViewController.swift in Sources */,
+				F4AE750725FF3D680063ADD0 /* TodayViewModel.swift in Sources */,
+				F4788B2326004D250047FF30 /* TheCatAPI.swift in Sources */,
+				F4788B2F2600546B0047FF30 /* Constant.swift in Sources */,
+				F4788B38260057AA0047FF30 /* CatRepositoryType.swift in Sources */,
+				F4788B332600573E0047FF30 /* FetchCatImagesUseCase.swift in Sources */,
+				F4AE74E225FF38800063ADD0 /* TodayViewController.swift in Sources */,
+				F4AE750B25FF3DA00063ADD0 /* Cat.swift in Sources */,
 				F4AE74DE25FF38800063ADD0 /* AppDelegate.swift in Sources */,
+				F4788B2B260053480047FF30 /* LoadingView.swift in Sources */,
 				F4AE74E025FF38800063ADD0 /* SceneDelegate.swift in Sources */,
+				F4788B3D26005BF90047FF30 /* CatRepository.swift in Sources */,
+				F4788B2626004E4C0047FF30 /* TheCatAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +513,7 @@
 		};
 		F4AE74EF25FF38820063ADD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D24FE2B886E228D91839B29 /* Pods-kocheng.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +532,7 @@
 		};
 		F4AE74F025FF38820063ADD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E5FC032994A9C88AEBFDD5 /* Pods-kocheng.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

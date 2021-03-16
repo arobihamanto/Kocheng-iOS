@@ -1,0 +1,6 @@
+module Pods_kocheng {
+  umbrella header "Pods-kocheng-umbrella.h"
+
+  export *
+  module * { export * }
+}
