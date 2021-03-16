@@ -22,6 +22,7 @@ class TodayViewController: UIViewController{
         super.viewDidLoad()
         configureLoadingView()
         bindViewModel()
+        setupViews()
     }
     
     private func configureLoadingView() {
@@ -61,8 +62,12 @@ class TodayViewController: UIViewController{
     }
     
     private func setupViews() {
-        todayCatImageView
-            .kf
-            .setImage(with: URL(string: PLACEHOLDER_IMAGE))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        todayCatImageView.isUserInteractionEnabled = true
+        todayCatImageView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        viewModel.input.viewDidLoad()
     }
 }
