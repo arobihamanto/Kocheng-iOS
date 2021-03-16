@@ -12,6 +12,8 @@ import RxCocoa
 
 class TodayViewController: UIViewController{
     
+    
+    @IBOutlet weak var searchBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var todayCatImageView: UIImageView!
     
     private var loadingView: LoadingView!
@@ -20,21 +22,19 @@ class TodayViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureLoadingView()
-        bindViewModel()
         setupViews()
+        initViewModel()
+        bindViewModel()
     }
     
-    private func configureLoadingView() {
-        loadingView = LoadingView(style: .medium)
-        loadingView.center = view.center
-        view.addSubview(loadingView)
+    private func initViewModel() {
+        let service = TheCatService()
+        let actions = TodayViewModelActions(showSearch: navigateToSearch)
+        let useCase = FetchCatImagesUseCase(repository: CatRepository(theCatAPIService: service))
+        viewModel = TodayViewModel(actions: actions, fetchCatImagesUseCase: useCase)
     }
     
     private func bindViewModel() {
-        let service = TheCatService()
-        let useCase = FetchCatImagesUseCase(repository: CatRepository(theCatAPIService: service))
-        viewModel = TodayViewModel(fetchCatImagesUseCase: useCase)
         let inputs = viewModel.input
         let outputs = viewModel.output
         
@@ -52,7 +52,6 @@ class TodayViewController: UIViewController{
                     .kf
                     .setImage(with: URL(string: imageURL))
             }.disposed(by: disposeBag)
-
         
         outputs
             .errorMessage
@@ -62,12 +61,37 @@ class TodayViewController: UIViewController{
     }
     
     private func setupViews() {
+        configureLoadingView()
+        
+        searchBarButtonItem
+            .rx
+            .tap
+            .subscribe { [weak self] _ in
+                self?.navigateToSearch()
+            }.disposed(by: disposeBag)
+
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         todayCatImageView.isUserInteractionEnabled = true
         todayCatImageView.addGestureRecognizer(tapGestureRecognizer)
     }
     
+    private func configureLoadingView() {
+        loadingView = LoadingView(style: .medium)
+        loadingView.center = view.center
+        view.addSubview(loadingView)
+    }
+    
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         viewModel.input.viewDidLoad()
+    }
+    
+    func navigateToSearch() {
+        let service = TheCatService()
+        let repository = CatRepository(theCatAPIService: service)
+        let fetchImageUseCase = FetchCatImagesUseCase(repository: repository)
+        let viewModel = SearchViewModel(fetchCatImagesUseCase: fetchImageUseCase)
+        let vc = SearchViewController.create(with: viewModel)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

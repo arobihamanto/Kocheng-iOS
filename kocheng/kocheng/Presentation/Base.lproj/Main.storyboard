@@ -30,15 +30,45 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Today's Cat" id="req-Bf-T7z">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="B0U-gy-T3E" customClass="Search"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="B0U-gy-T3E"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBarButtonItem" destination="B0U-gy-T3E" id="t5H-eI-TPS"/>
                         <outlet property="todayCatImageView" destination="Onh-qF-PrB" id="PRs-VU-zsZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="755.07246376811599" y="84.375"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="qdz-nX-bIa">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="qP9-wb-Cxz" customClass="SearchViewController" customModule="kocheng" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X5V-RO-rLE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EwF-J6-v29">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lxa-CL-k3k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EwF-J6-v29" firstAttribute="leading" secondItem="lxa-CL-k3k" secondAttribute="leading" id="QgU-QT-vm1"/>
+                            <constraint firstItem="EwF-J6-v29" firstAttribute="top" secondItem="lxa-CL-k3k" secondAttribute="top" id="aaV-H6-7Aj"/>
+                            <constraint firstItem="lxa-CL-k3k" firstAttribute="trailing" secondItem="EwF-J6-v29" secondAttribute="trailing" id="iD0-T9-Yz0"/>
+                            <constraint firstAttribute="bottom" secondItem="EwF-J6-v29" secondAttribute="bottom" id="vXx-Rh-LBS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchResultImageView" destination="EwF-J6-v29" id="l05-qB-HAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTb-tJ-tcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="751"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dc7-bp-051">
