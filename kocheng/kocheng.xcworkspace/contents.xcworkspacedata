@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:kocheng.xcodeproj">
+      location = "group:/Users/robihamanto/dev/Kocheng-iOS/kocheng/Kocheng.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Kocheng.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,11 +1,21 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'kocheng' do
+#target 'App' do
+#  target 'AppTests' do
+#    inherit! :search_paths
+#  end
+#end
+
+target 'Kocheng' do
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for kocheng
+  target 'KochengTests' do
+    inherit! :search_paths
+  end
+  
+  # Pods for Kocheng
   pod 'RxSwift', '6.1.0'
   pod 'RxCocoa', '6.1.0'
   pod 'Kingfisher', '~> 6.0'

@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		962A9755DFB12E52AEF566E8 /* libPods-kocheng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B533B037B35C4F507FF560 /* libPods-kocheng.a */; };
+		0CA4D312E8C49F4003D52AE8 /* libPods-KochengTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BA84896B32B1B7A118D287 /* libPods-KochengTests.a */; };
+		77FCD7ED1A77EA28A35A9233 /* libPods-Kocheng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F42AEDC6BCE849F59C179AB /* libPods-Kocheng.a */; };
+		F4612F862600A28B00F381C0 /* KochengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4612F852600A28B00F381C0 /* KochengTests.swift */; };
+		F4612FFA2600A63000F381C0 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4612FF62600A63000F381C0 /* DataProvider.swift */; };
+		F4612FFB2600A63000F381C0 /* FetchCatImagesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4612FF82600A63000F381C0 /* FetchCatImagesUseCaseTests.swift */; };
+		F46130042600A74100F381C0 /* cat_list_response_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = F46130032600A74100F381C0 /* cat_list_response_mock.json */; };
 		F4788B2326004D250047FF30 /* TheCatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B2226004D250047FF30 /* TheCatAPI.swift */; };
 		F4788B2626004E4C0047FF30 /* TheCatAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B2526004E4C0047FF30 /* TheCatAPIService.swift */; };
 		F4788B2B260053480047FF30 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4788B2A260053480047FF30 /* LoadingView.swift */; };
@@ -28,10 +33,29 @@
 		F4EF69742600646400B9C44D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF69732600646400B9C44D /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F4612F882600A28B00F381C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4AE74D225FF38800063ADD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4AE74D925FF38800063ADD0;
+			remoteInfo = kocheng;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		48E5FC032994A9C88AEBFDD5 /* Pods-kocheng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kocheng.release.xcconfig"; path = "Target Support Files/Pods-kocheng/Pods-kocheng.release.xcconfig"; sourceTree = "<group>"; };
-		51B533B037B35C4F507FF560 /* libPods-kocheng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kocheng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D24FE2B886E228D91839B29 /* Pods-kocheng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kocheng.debug.xcconfig"; path = "Target Support Files/Pods-kocheng/Pods-kocheng.debug.xcconfig"; sourceTree = "<group>"; };
+		06BA84896B32B1B7A118D287 /* libPods-KochengTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KochengTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F42AEDC6BCE849F59C179AB /* libPods-Kocheng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kocheng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3916032458E927C922C97926 /* Pods-Kocheng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kocheng.release.xcconfig"; path = "Target Support Files/Pods-Kocheng/Pods-Kocheng.release.xcconfig"; sourceTree = "<group>"; };
+		64C1676B9E0008688E0A7E66 /* Pods-KochengTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KochengTests.release.xcconfig"; path = "Target Support Files/Pods-KochengTests/Pods-KochengTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D7E41EB8EC2A300BC57576B /* Pods-KochengTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KochengTests.debug.xcconfig"; path = "Target Support Files/Pods-KochengTests/Pods-KochengTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA957300B7C2A7E1FA0AEF5A /* Pods-Kocheng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kocheng.debug.xcconfig"; path = "Target Support Files/Pods-Kocheng/Pods-Kocheng.debug.xcconfig"; sourceTree = "<group>"; };
+		F4612F832600A28B00F381C0 /* KochengTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KochengTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4612F852600A28B00F381C0 /* KochengTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KochengTests.swift; sourceTree = "<group>"; };
+		F4612F872600A28B00F381C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4612FF62600A63000F381C0 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		F4612FF82600A63000F381C0 /* FetchCatImagesUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchCatImagesUseCaseTests.swift; sourceTree = "<group>"; };
+		F46130032600A74100F381C0 /* cat_list_response_mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = cat_list_response_mock.json; path = kochengTests/Mock/ResponseAPI/cat_list_response_mock.json; sourceTree = SOURCE_ROOT; };
 		F4788B2226004D250047FF30 /* TheCatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPI.swift; sourceTree = "<group>"; };
 		F4788B2526004E4C0047FF30 /* TheCatAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPIService.swift; sourceTree = "<group>"; };
 		F4788B2A260053480047FF30 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -39,7 +63,7 @@
 		F4788B322600573E0047FF30 /* FetchCatImagesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCatImagesUseCase.swift; sourceTree = "<group>"; };
 		F4788B37260057AA0047FF30 /* CatRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRepositoryType.swift; sourceTree = "<group>"; };
 		F4788B3C26005BF90047FF30 /* CatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatRepository.swift; sourceTree = "<group>"; };
-		F4AE74DA25FF38800063ADD0 /* kocheng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kocheng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AE74DA25FF38800063ADD0 /* Kocheng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kocheng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4AE74DD25FF38800063ADD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4AE74DF25FF38800063ADD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4AE74E125FF38800063ADD0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -55,11 +79,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F4612F802600A28B00F381C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA4D312E8C49F4003D52AE8 /* libPods-KochengTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4AE74D725FF38800063ADD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962A9755DFB12E52AEF566E8 /* libPods-kocheng.a in Frameworks */,
+				77FCD7ED1A77EA28A35A9233 /* libPods-Kocheng.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +101,8 @@
 		49DDEEA66BA1E58E95888940 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51B533B037B35C4F507FF560 /* libPods-kocheng.a */,
+				1F42AEDC6BCE849F59C179AB /* libPods-Kocheng.a */,
+				06BA84896B32B1B7A118D287 /* libPods-KochengTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,10 +110,80 @@
 		C4D48D770D9CBB3110BF0FDB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7D24FE2B886E228D91839B29 /* Pods-kocheng.debug.xcconfig */,
-				48E5FC032994A9C88AEBFDD5 /* Pods-kocheng.release.xcconfig */,
+				8D7E41EB8EC2A300BC57576B /* Pods-KochengTests.debug.xcconfig */,
+				64C1676B9E0008688E0A7E66 /* Pods-KochengTests.release.xcconfig */,
+				EA957300B7C2A7E1FA0AEF5A /* Pods-Kocheng.debug.xcconfig */,
+				3916032458E927C922C97926 /* Pods-Kocheng.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4612F842600A28B00F381C0 /* KochengTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4612FF42600A63000F381C0 /* Domain */,
+				F46130002600A70400F381C0 /* Mock */,
+				F46130012600A70800F381C0 /* Utils */,
+				F4612F872600A28B00F381C0 /* Info.plist */,
+				F4612F852600A28B00F381C0 /* KochengTests.swift */,
+			);
+			path = KochengTests;
+			sourceTree = "<group>";
+		};
+		F4612FF42600A63000F381C0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F4612FF52600A63000F381C0 /* Utils */,
+				F4612FF72600A63000F381C0 /* UseCases */,
+				F4612FF92600A63000F381C0 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F4612FF52600A63000F381C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4612FF62600A63000F381C0 /* DataProvider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F4612FF72600A63000F381C0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F4612FF82600A63000F381C0 /* FetchCatImagesUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F4612FF92600A63000F381C0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F46130002600A70400F381C0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F46130022600A71D00F381C0 /* ResponseAPI */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F46130012600A70800F381C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F46130022600A71D00F381C0 /* ResponseAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F46130032600A74100F381C0 /* cat_list_response_mock.json */,
+			);
+			path = ResponseAPI;
 			sourceTree = "<group>";
 		};
 		F4788B2026004CC90047FF30 /* Infrastructure */ = {
@@ -158,8 +261,9 @@
 		F4AE74D125FF38800063ADD0 = {
 			isa = PBXGroup;
 			children = (
-				F4AE74DC25FF38800063ADD0 /* kocheng */,
+				F4AE74DC25FF38800063ADD0 /* Kocheng */,
 				C4D48D770D9CBB3110BF0FDB /* Pods */,
+				F4612F842600A28B00F381C0 /* KochengTests */,
 				49DDEEA66BA1E58E95888940 /* Frameworks */,
 				F4AE74DB25FF38800063ADD0 /* Products */,
 			);
@@ -168,12 +272,13 @@
 		F4AE74DB25FF38800063ADD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE74DA25FF38800063ADD0 /* kocheng.app */,
+				F4AE74DA25FF38800063ADD0 /* Kocheng.app */,
+				F4612F832600A28B00F381C0 /* KochengTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F4AE74DC25FF38800063ADD0 /* kocheng */ = {
+		F4AE74DC25FF38800063ADD0 /* Kocheng */ = {
 			isa = PBXGroup;
 			children = (
 				F4AE74F225FF38CA0063ADD0 /* Application */,
@@ -183,7 +288,7 @@
 				F4AE74F425FF39B50063ADD0 /* Presentation */,
 				F4AE74F325FF39800063ADD0 /* Resources */,
 			);
-			path = kocheng;
+			path = Kocheng;
 			sourceTree = "<group>";
 		};
 		F4AE74F225FF38CA0063ADD0 /* Application */ = {
@@ -282,9 +387,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F4AE74D925FF38800063ADD0 /* kocheng */ = {
+		F4612F822600A28B00F381C0 /* KochengTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4AE74EE25FF38820063ADD0 /* Build configuration list for PBXNativeTarget "kocheng" */;
+			buildConfigurationList = F4612F8C2600A28B00F381C0 /* Build configuration list for PBXNativeTarget "KochengTests" */;
+			buildPhases = (
+				01EA8DAF7FB5C39149414DBF /* [CP] Check Pods Manifest.lock */,
+				F4612F7F2600A28B00F381C0 /* Sources */,
+				F4612F802600A28B00F381C0 /* Frameworks */,
+				F4612F812600A28B00F381C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4612F892600A28B00F381C0 /* PBXTargetDependency */,
+			);
+			name = KochengTests;
+			productName = KochengTests;
+			productReference = F4612F832600A28B00F381C0 /* KochengTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4AE74D925FF38800063ADD0 /* Kocheng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AE74EE25FF38820063ADD0 /* Build configuration list for PBXNativeTarget "Kocheng" */;
 			buildPhases = (
 				FA325E24AC5297806A901CC1 /* [CP] Check Pods Manifest.lock */,
 				F4AE74D625FF38800063ADD0 /* Sources */,
@@ -295,9 +419,9 @@
 			);
 			dependencies = (
 			);
-			name = kocheng;
+			name = Kocheng;
 			productName = kocheng;
-			productReference = F4AE74DA25FF38800063ADD0 /* kocheng.app */;
+			productReference = F4AE74DA25FF38800063ADD0 /* Kocheng.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -309,12 +433,16 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					F4612F822600A28B00F381C0 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F4AE74D925FF38800063ADD0;
+					};
 					F4AE74D925FF38800063ADD0 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = F4AE74D525FF38800063ADD0 /* Build configuration list for PBXProject "kocheng" */;
+			buildConfigurationList = F4AE74D525FF38800063ADD0 /* Build configuration list for PBXProject "Kocheng" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -327,12 +455,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4AE74D925FF38800063ADD0 /* kocheng */,
+				F4AE74D925FF38800063ADD0 /* Kocheng */,
+				F4612F822600A28B00F381C0 /* KochengTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F4612F812600A28B00F381C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46130042600A74100F381C0 /* cat_list_response_mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4AE74D825FF38800063ADD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +483,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01EA8DAF7FB5C39149414DBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KochengTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FA325E24AC5297806A901CC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,7 +520,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kocheng-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Kocheng-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -371,6 +530,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F4612F7F2600A28B00F381C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4612FFA2600A63000F381C0 /* DataProvider.swift in Sources */,
+				F4612FFB2600A63000F381C0 /* FetchCatImagesUseCaseTests.swift in Sources */,
+				F4612F862600A28B00F381C0 /* KochengTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4AE74D625FF38800063ADD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +564,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F4612F892600A28B00F381C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4AE74D925FF38800063ADD0 /* Kocheng */;
+			targetProxy = F4612F882600A28B00F381C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F4AE74E325FF38800063ADD0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -415,6 +592,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F4612F8A2600A28B00F381C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D7E41EB8EC2A300BC57576B /* Pods-KochengTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KochengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.KochengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kocheng.app/Kocheng";
+			};
+			name = Debug;
+		};
+		F4612F8B2600A28B00F381C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C1676B9E0008688E0A7E66 /* Pods-KochengTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KochengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.robihamanto.KochengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kocheng.app/Kocheng";
+			};
+			name = Release;
+		};
 		F4AE74EC25FF38820063ADD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,7 +750,7 @@
 		};
 		F4AE74EF25FF38820063ADD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D24FE2B886E228D91839B29 /* Pods-kocheng.debug.xcconfig */;
+			baseConfigurationReference = EA957300B7C2A7E1FA0AEF5A /* Pods-Kocheng.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -552,7 +769,7 @@
 		};
 		F4AE74F025FF38820063ADD0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48E5FC032994A9C88AEBFDD5 /* Pods-kocheng.release.xcconfig */;
+			baseConfigurationReference = 3916032458E927C922C97926 /* Pods-Kocheng.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -572,7 +789,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F4AE74D525FF38800063ADD0 /* Build configuration list for PBXProject "kocheng" */ = {
+		F4612F8C2600A28B00F381C0 /* Build configuration list for PBXNativeTarget "KochengTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4612F8A2600A28B00F381C0 /* Debug */,
+				F4612F8B2600A28B00F381C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AE74D525FF38800063ADD0 /* Build configuration list for PBXProject "Kocheng" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4AE74EC25FF38820063ADD0 /* Debug */,
@@ -581,7 +807,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4AE74EE25FF38820063ADD0 /* Build configuration list for PBXNativeTarget "kocheng" */ = {
+		F4AE74EE25FF38820063ADD0 /* Build configuration list for PBXNativeTarget "Kocheng" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4AE74EF25FF38820063ADD0 /* Debug */,
